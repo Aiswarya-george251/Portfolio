@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aiswarya's Portfolio</title>
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body class="margini">
+
+<header>
+  <nav class="topNav">
+    <ul>
+      <li><h1>WELCOME TO MY PORTFOLIO</h1></li>
+      <li><a class="valHome" href="About.html">ABOUT</a></li>
+      <li><a class="valHome" href="#skills">SKILLS</a></li>
+      <li><a class="valHome" href="projects.html">PROJECTS</a></li>
+      <li><a class="valHome" href="#contact">CONTACT</a></li>
+    </ul>
+    </nav>
+  </header>
+
+<main>
+  <div class= "btn-box">
+  <img id="banner" src="images/banner.png" alt="Portfolio banner" />
+  
+  <div class="text-overlay">
+  <a href="#about" class="learn-button">Learn More</a>
+  <h6 onclick="goToContact()">Let's Talk</h6>
+  </div>
+</div>
+
+
+
+  <div id="margindiv">
+
+    <!-- About Me -->
+    <section class="loc1" id="about">
+      <h2 id="insideMain">ABOUT ME</h2>
+      <img id="imgBelowBanner" src="images/PROFILE.jpEg" alt="My photo" />
+      <p id="forP">
+        Hi!, I’m Aiswarya — a curious and creative individual with a passion for learning, designing, and problem-solving. I bring experience in technical support, customer success, and hands-on work with tools like HTML, CSS, Python, Salesforce and SQL. I enjoy blending logic with creativity to build meaningful experiences and help people.<br>
+Passionate about simplifying support- making even the most complicated issues feel manageable for non-technical users. <br>
+
+This portfolio is a reflection of my journey — showcasing both my growth and the projects I've created.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="loc2" id="skills">
+      <h2 id="insideMain2">MY SKILLS</h2>
+      <div class="forSec">
+        <section>
+          <img class="sect" src="images/html-css.png" alt="HTML" />
+          <p class="duel">HTML & CSS – Building responsive, beginner-friendly websites like this one.</p>
+        </section>
+        <section>
+          <img class="sect" src="images/python.png" alt="Design" />
+          <p class="duel">All the basic functions and mini projects like displayed in projects section</p>
+        </section>
+        <section>
+          <img class="sect" src="images/Database.png" alt="AI Tools" />
+          <p class="duel">SQL- applied basic skills to query,filter, and organise data using SELECT,WHERE, and JOIN statement.</p>
+        </section>
+      </div>
+    </section>
+
+   
+
+    <!-- Contact -->
+    <section class="loc1" id="contact">
+      <h2 id="insideMain">CONTACT ME</h2>
+      <p id="forP">
+        📧 Email: <a href="mailto:aiswaryageorge31@gmail.com">aiswaryageorge31@gmail.com</a><br />
+<br />
+        🔗 LinkedIn: <a href="https://www.linkedin.com/in/aiswarya-george-2b9843172/">linkedin.com/in/yourprofile</a><br />
+            </section>
+<script>
+    function goToContact() {
+      alert("Thanks for clicking! Scrolling to contact...");
+      // Scroll to the contact section
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+  </div>	
+</main>
+
+<footer>
+  
+   
+    <span>&copy; 2025 Aiswarya George | All rights reserved.</span>
+  
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,962 @@
+/* Reset and Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+.btn-box {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+/* Container Setup */
+.btn-box {
+  position: relative;
+  width: 100%;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container Setup */
+.btn-box {
+  position: relative;
+  width: 100%;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+}
+
+/* Button Styles for h5 and h6 */
+.text-overlay h5,
+.text-overlay h6 {
+  position: relative;
+  width: 150px;
+  padding: 15px 20px;
+  background: #2F4662;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Hover Background Overlay */
+.text-overlay h5::before,
+.text-overlay h6::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: hwb(29 16% 47%);
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+/* On Hover: Slide Background */
+.text-overlay h5:hover::before,
+.text-overlay h6:hover::before {
+  width: 100%;
+}
+
+/* Optional: Change text color on hover */
+.text-overlay h5:hover,
+.text-overlay h6:hover {
+  color: #000;
+}
+/* Learn More Button Style (Replaces h5 style) */
+.learn-button {
+  display: inline-block;
+  width: 150px;
+  padding: 15px 20px;
+  background: #2F4662;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.learn-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: hwb(29 16% 47%);
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.learn-button:hover::before {
+  width: 100%;
+}
+
+.learn-button:hover {
+  color: #000;
+}
+
+
+
+
+
+
+
+.btn-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 80%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.text-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 48px;
+
+  margin: 0;
+}
+
+
+body {
+  background-color: #fff;
+  color: #333;
+  padding-top: 50px; /* offset for fixed header */
+  line-height: 1.6;
+}
+body.margin {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+body.margin #margindiv {
+  margin-top: 0 !important;
+  padding-top: 0px; /* Optional: small breathing room */
+}
+
+body.margino {
+  padding-top: 30px !important;
+  margin-top: 10px !important;
+}
+
+body.margino #margindiv {
+  margin-top: 40px !important;
+  padding-top: 20px; /* Optional: small breathing room */
+}
+
+
+/* Header Navigation */
+.topNav {
+  background-color: #e4ceb9;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topNav ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.topNav li {
+  margin: 0 10px;
+}
+
+
+
+
+.topNav h1 {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.valHome {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.valHome:hover,
+#val:hover {
+  text-shadow: 2px 2px black;
+}
+
+/* Banner Image */
+#banner {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Page Container */
+#margindiv {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  padding-top: 10PX;
+}
+
+/* Section Headings */
+#insideMain,
+#insideMain2,
+#insideMain3 {
+  font-size: 32px;
+  color: #2F4662;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.loc1,
+.loc2,
+.loc3 {
+  margin: 60px 0;
+}
+
+/* About Section Image */
+#imgBelowBanner,
+#imgsideBanner {
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  object-fit: cover;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* Clear float */
+.loc1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Paragraphs */
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Flexible Image Grids */
+.forSec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Project/Gallery Cards */
+.sect,
+.sect1 {
+  width: 100%;
+  max-width: 300px;
+  height: 200px; /* Fixed height ensures uniformity */
+  overflow: hidden; /* Prevent image overflow */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Images inside .sect or .sect1 */
+.sect img,
+.sect1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+.duel,
+.duel1 {
+  max-width: 300px;
+  font-size: 16px;
+  color: #444;
+}
+/* CONTACT SECTION */
+#contact {
+  background-color: #b3b6b3;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin-top: 80px;
+}
+
+#contact h2 {
+  color: #2F4662;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+#contact #forP {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+}
+
+#contact a {
+  color: #2F4662;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+
+/* Footer */
+footer {
+  background-color: #e4ceb9;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.botNav {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+
+span {
+  font-size: 13px;
+  display: block;
+}
+
+/* Cake Box (if used for gallery) */
+div.cake {
+  margin: 13px;
+  float: left;
+  width: 100px;
+}
+
+div.cake:hover {
+  border: 1px solid #777;
+}
+
+div.cake img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .topNav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #imgBelowBanner,
+  #imgsideBanner {
+    float: none;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+
+  .forSec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topNav h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .valHome {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+/*project*/
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body + Container */
+body.margin {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding-top: 0;
+}
+
+#margindiv {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#insideMain {
+  font-size: 32px;
+  color: #2F4662;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Header Navigation */
+.topNav {
+  background-color: #e4ceb9;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topNav ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.topNav li {
+  margin: 0 10px;
+}
+
+.topNav h1 {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.valHome {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.valHome:hover {
+  text-shadow: 2px 2px black;
+}
+
+/* Project Section Layout */
+.projectBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.projectImage {
+  flex: 2;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.projectImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.projectText {
+  flex: 1;
+  min-width: 250px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #e4ceb9;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.botNav {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.botUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.botUl li {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Responsive Layout for Phones */
+@media (max-width: 768px) {
+  .topNav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topNav h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .valHome {
+    padding: 10px 0;
+  }
+
+  .projectBlock {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projectImage, .projectText {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ----------- Responsive Enhancements ----------- */
+
+/* Extra Small Devices - Phones (portrait, <480px) */
+@media (max-width: 480px) {
+  .text-overlay {
+    flex-direction: column;
+    gap: 10px;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text-overlay h1,
+  .text-overlay p {
+    font-size: 24px;
+  }
+
+  .learn-button,
+  .text-overlay h5,
+  .text-overlay h6 {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+
+  .topNav h1 {
+    font-size: 20px;
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  #contact #forP {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+}
+
+/* Tablets and small laptops (481px–768px) */
+@media (max-width: 768px) {
+  .text-overlay {
+    flex-direction: column;
+    gap: 15px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-overlay h1,
+  .text-overlay p {
+    font-size: 32px;
+  }
+
+  .learn-button,
+  .text-overlay h5,
+  .text-overlay h6 {
+    font-size: 17px;
+    width: 180px;
+    padding: 14px 12px;
+  }
+
+  .topNav h1 {
+    font-size: 22px;
+  }
+
+  #insideMain,
+  #insideMain2,
+  #insideMain3 {
+    font-size: 28px;
+  }
+
+  .sect,
+  .sect1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .projectBlock {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .projectImage,
+  .projectText {
+    width: 100%;
+  }
+
+  #imgBelowBanner,
+  #imgsideBanner {
+    width: 100%;
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .forSec {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small laptops (769px–1024px) */
+@media (max-width: 1024px) {
+  .topNav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .projectBlock {
+    gap: 30px;
+  }
+
+  .sect,
+  .sect1 {
+    height: auto;
+  }
+
+  .learn-button {
+    font-size: 18px;
+    padding: 14px 18px;
+  }
+}
+/* Responsive Fix for Small Screens */
+@media (max-width: 768px) {
+  .btn-box {
+    max-height: 400px; /* smaller height on mobile */
+    padding-top: 120px;
+    margin-top: 100px;
+  }
+
+  .btn-box img {
+    height: 700px;
+    object-fit: cover;
+  }
+
+  .text-overlay {
+    flex-direction: column;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+    text-align: center;
+  }
+
+  .text-overlay,
+  .learn-button
+  .text-overlay h6 {
+    width: 130px;
+    padding: 30px 25px;
+    font-size: 6px;
+  }
+
+  .text-overlay p {
+    font-size: 24px;
+  }
+
+  .text-overlay h1 {
+    font-size: 28px;
+  }
+
+  .topNav h1 {
+    font-size: 20px;
+  }
+
+  #margindiv {
+    padding-top: 100px;
+    padding-top: 500px; /* Add space under header */
+  }
+
+  .sect,
+  .sect1 {
+    max-width: 100%;
+    height: 180px;
+  }
+
+  .duel,
+  .duel1 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  #imgBelowBanner,
+  #imgsideBanner {
+    float: none;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .loc1 {
+    text-align: center;
+  }
+
+  .forSec {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .topNav {
+    padding: 0px 0;
+    background-color: #e8ccb0; /* Adjust if needed */
+  }
+
+  .topNav h1 {
+    font-size: 10px;
+    margin: 0px 0;
+    padding: 5px 10px;
+  }
+
+  .topNav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .topNav li {
+    margin: -8px ;
+  }
+}
+@media (max-width: 768px) {
+  .topNav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    background-color: #e4ceb9;
+  }
+
+  /* Fix content overlap */
+  #margindiv {
+    margin-top: opx;
+    padding-top: 2px; /* Push content below fixed header */
+  }
+}
+@media (max-width: 768px) {
+  body.margin {
+    padding-top: 0 !important;
+  }
+
+  body.margin #margindiv {
+    margin-top: 100px !important; /* force it */
+  }
+}
+@media (max-width: 768px) {
+  body.margino {
+    padding-top: 0 !important;
+  }
+
+  body.margino #margindiv {
+    margin-top: 100px !important; /* force it */
+  }
+}
+@media (max-width: 768px) {
+  body.margini {
+    padding-top: 0px !important;
+  }
+   body.margini #margindiv {
+    margin-top: 0px !important; /* force it */
+  }
+
+}
+@media screen and (max-width: 768px) {
+  /* Text Overlay */
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+    padding-top: 310px; /* Only for smaller screens */
+  }
+
+  /* Button Styles for h5 and h6 */
+  .learn-button,
+  .text-overlay h6 {
+    position: relative;
+    width: 150px;
+    padding: 5px 10px;
+    background: #2F4662;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  /* Hover Background Overlay */
+  .text-overlay h5::before,
+  .text-overlay h6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: hwb(29 16% 47%);
+    z-index: -1;
+    transition: width 0.5s ease;
+  }
+
+  /* On Hover: Slide Background */
+  .text-overlay h5:hover::before,
+  .text-overlay h6:hover::before {
+    width: 100%;
+  }
+
+  /* Optional: Change text color on hover */
+  .text-overlay h5:hover,
+  .text-overlay h6:hover {
+    color: #000;
+  }
+
+  /* Learn More Button Style */
+  .learn-button {
+    display: inline-block;
+    width: 150px;
+    padding: 5px 10px;
+    background: #2F4662;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .learn-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: hwb(29 16% 47%);
+    z-index: -1;
+    transition: width 0.5s ease;
+  }
+
+  .learn-button:hover::before {
+    width: 100%;
+  }
+
+  .learn-button:hover {
+    color: #000;
+  }
+}
